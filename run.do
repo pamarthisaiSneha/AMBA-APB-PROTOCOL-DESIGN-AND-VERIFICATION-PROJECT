@@ -14,17 +14,3 @@ sim:/apb_top/intf/paddr
 add wave /apb_top/dut/uut/aa/rst_check /apb_top/dut/uut/aa/data_check1 /apb_top/dut/uut/aa/data_check2 /apb_top/dut/uut/aa/read_check /apb_top/dut/uut/aa/setup_check /apb_top/dut/uut/aa/access_check
 run -all
 
-#----------------------xilinx---------------------
-#vlib work
-
-#vlog APB_TOP.sv \
-#+incdir+/home/phaneendra/questa_phani/questasim/verilog_src/uvm-1.1d/src
-
-#vsim work.apb_top \
-#-sv_lib /home/phaneendra/questa_phani/questasim/uvm-1.1d/linux_x86_64/uvm_dpi \
-#+UVM_TESTNAME=apb_test2 \
-#+UVM_NO_RELNOTES \
-#+UVM_VERBOSITY=UVM_MEDIUM -l run.log
-
-
-#run -all
